@@ -1,0 +1,38 @@
+.todos{
+    display: flex;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    width: 67%;
+    background: white;
+    border: 2px solid black;
+    margin: 7px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(205, 240, 251);
+}
+
+button{
+    /* height: 30px; */
+    padding: 5px;
+    margin: 6px;
+    outline:none;
+    border-radius: 5px;
+}
+
+.edit{
+    width: 9%;
+    background-color:yellow;
+}
+
+.delete{
+    width:10%;
+    background-color:red;
+}
