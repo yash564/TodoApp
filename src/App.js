@@ -3,6 +3,18 @@ import TodoLists from "./Components/TodoLists/TodoLists";
 import "./App.css";
 
 function App() {
+  localStorage.setItem(
+    "todos",
+    JSON.stringify([
+      "Chemistry",
+      "Physics",
+      "Mathematics",
+      "History",
+      "Civics",
+      "Biology",
+      "Accounts",
+    ])
+  );
   const [newTodo, setNewTodo] = useState("");
   const [todos, setTodos] = useState(JSON.parse(localStorage.getItem("todos")));
 
@@ -40,7 +52,7 @@ function App() {
 
   return (
     <div>
-      <h1 style={{textAlign:"center"}}>TODO APP</h1>
+      <h1 style={{ textAlign: "center" }}>TODO APP</h1>
       <div className="app">
         <input
           type="text"
