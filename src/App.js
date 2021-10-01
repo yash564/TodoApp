@@ -3,18 +3,18 @@ import TodoLists from "./Components/TodoLists/TodoLists";
 import "./App.css";
 
 function App() {
-  localStorage.setItem(
-    "todos",
-    JSON.stringify([
-      "Chemistry",
-      "Physics",
-      "Mathematics",
-      "History",
-      "Civics",
-      "Biology",
-      "Accounts",
-    ])
-  );
+  // localStorage.setItem(
+  //   "todos",
+  //   JSON.stringify([
+  //     "Chemistry",
+  //     "Physics",
+  //     "Mathematics",
+  //     "History",
+  //     "Civics",
+  //     "Biology",
+  //     "Accounts",
+  //   ])
+  // );
   const [newTodo, setNewTodo] = useState("");
   const [todos, setTodos] = useState(JSON.parse(localStorage.getItem("todos")));
 
