@@ -6,7 +6,7 @@ const TodoLists = (props) => {
   
   return (
     <ul>
-      {arr.length>0 && arr.map((id) => {
+      {arr && arr.map((id) => {
         return (
           <div className="todos" key={id}>
             <li>{id}</li>

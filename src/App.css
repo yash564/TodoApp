@@ -20,3 +20,13 @@ input {
   border: 2px solid gray;
   margin-top: 10px;
 }
+
+@media only screen and (max-width:600px){
+  input{
+    width:50vw;
+  }
+  .app{
+    width: 70vw;
+    left: calc(50% - 35vw);
+  }
+}
